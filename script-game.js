@@ -1,5 +1,5 @@
 function computerPlay() {
-  let number = Math.floor(Math.random()*3); //0=rock; 1=paper; 2=scissors;
+  let number = Math.floor(Math.random()*3);
   return (number == 0) ? 'root' : (number == 1) ? 'boot' : 'glute';
 }
 
@@ -41,7 +41,7 @@ function playRound(playerSelection, computerSelection) {
       : game("It's a tie!");
       break;
     default:
-      console.error('playerSelection did not equal 0, 1, or 2');
+      console.error("playerSelection did not equal 'root' 'boot' or 'glute'");
   }
 }
 
@@ -70,10 +70,10 @@ function game(roundResult) {
   
   if(userScore==5 || computerScore==5) {
     window.removeEventListener('click', respondToClick);
-    rockButton.classList.remove('button-action');
-    scissorsButton.classList.remove('button-action');
-    paperButton.classList.remove('button-action');
-    let delayInMilliseconds = 3000;
+    rootButton.classList.remove('button-action');
+    bootButton.classList.remove('button-action');
+    gluteButton.classList.remove('button-action');
+    let delayInMilliseconds = 3000; // 3 seconds
     setTimeout(function() {
       if(userScore==5) instructions.textContent = "You won the match! Make your choice to play again...";
       if(computerScore==5) instructions.textContent = "You lost the match. Make your choice to play again...";
@@ -86,16 +86,16 @@ function game(roundResult) {
       currentRound.removeChild(computerImage);
       roundDescription.textContent = "";
       window.addEventListener('click', respondToClick);
-      rockButton.classList.add('button-action');
-      scissorsButton.classList.add('button-action');
-      paperButton.classList.add('button-action');
+      rootButton.classList.add('button-action');
+      bootButton.classList.add('button-action');
+      gluteButton.classList.add('button-action');
     }, delayInMilliseconds);
   }
 }
 
-const rockButton = document.querySelector('#rock-button');
-const paperButton = document.querySelector('#paper-button');
-const scissorsButton = document.querySelector('#scissors-button');
+const rootButton = document.querySelector('#root-button');
+const bootButton = document.querySelector('#boot-button');
+const gluteButton = document.querySelector('#glute-button');
 
 const userPoint = [];
 userPoint[0] = document.querySelector('#user-point1');
