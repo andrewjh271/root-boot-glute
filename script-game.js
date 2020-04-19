@@ -93,7 +93,7 @@ function game(roundResult) {
   }
 }
 
-let rockButton = document.querySelector('#rock-button');
+const rockButton = document.querySelector('#rock-button');
 const paperButton = document.querySelector('#paper-button');
 const scissorsButton = document.querySelector('#scissors-button');
 
