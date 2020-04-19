@@ -92,7 +92,7 @@ button:focus {
 }
 .point {
   float: right;
-  margin-top: 4px;
+  margin-top: 2px;
   margin-left: 3px;
 }
 .point1 {
@@ -108,7 +108,7 @@ button:focus {
   color: red;
 }
 .point5 {
-  color: purple;
+  color: rgb(62, 0, 119);
 }
 #instructions {
   color: #0211229f;
