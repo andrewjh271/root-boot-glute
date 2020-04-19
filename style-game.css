@@ -1,0 +1,136 @@
+html, body {
+  margin:0;padding:0;height:100%;
+}
+#window-container {
+  background-image: url(background.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+#container {
+  background-image: linear-gradient(45deg,#0058ca79, #13d4e2b0, #b424ad48);
+  height: 84vh;
+  width: 70vw;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  margin-right: 15vw;
+  margin-left: 15vw;
+  font-family: 'MedievalSharp', cursive;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 18px;
+}
+h1 {
+  text-align: center;
+  font-size: 7vh;
+  margin-bottom: 1.1vh;
+  margin-block-start: 0;
+  padding-top: 6vh;
+}
+.red {
+  color: rgb(236, 0, 0);
+}
+.blue {
+  color: blue;
+}
+.green {
+  color: rgb(31, 216, 31);
+}
+#button-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 7vh 40px 7vh 40px;
+}
+button {
+  width: 15vw;
+  height: 6vw;
+  font-size: 18px;
+  background-color: #032c1e9d;
+  color: white;
+  border-radius: 24px;
+  border: 1px solid white;
+  font-family: 'MedievalSharp', cursive;
+}
+.button-action:hover {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.199);
+  background-color: #01412ecc;
+  border: 1px solid #c6c6c6;
+  text-decoration: none;
+  transition: all .3s ease;
+  color: #d9f3ed;
+}
+button:focus {
+  outline: none;
+}
+.button-action:active {
+  border: 1px solid #300a0a;
+  transition: all 0s ease;
+  background-color: #7bcfb3;
+  color: white;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.199);
+}
+.no-click {
+  pointer-events: none;
+}
+#scoreboard {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+#user-score {
+  border: 2px black solid;
+  width: 50%;
+  font-size: 24px;
+  padding: 4px;
+}
+#computer-score {
+  border: 2px rgb(32, 15, 61) solid;
+  width: 50%;
+  font-size: 24px;
+  padding: 4px;
+}
+.point {
+  float: right;
+  margin-top: 4px;
+  margin-left: 3px;
+}
+.point1 {
+  color: blue;
+}
+.point2 {
+  color: green;
+}
+.point3 {
+  color: orange;
+}
+.point4 {
+  color: red;
+}
+.point5 {
+  color: purple;
+}
+#instructions {
+  color: #0211229f;
+}
+#current-round {
+  display: flex;
+  justify-content: space-between;
+  margin: 8vh 8vw 6vh 8vw;
+  font-size: 5vh;
+  text-align: center;
+  color: #0211229f;
+}
+#vs {
+  margin: auto;
+}
+.round-images {
+  width: 15vw;
+  height: 18vh;
+  border: 4px solid #2998a71e;
+  padding: 1vh;
+}
+#round-description {
+  text-align: center;
+  font-size: 2.5vh;
+}

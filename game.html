@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Root Boot Glute</title>
+  <link rel="stylesheet" href="style-game.css">
+  <script src="https://kit.fontawesome.com/07b0558508.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id='window-container'>
+    <div id='container'>
+      <h1>
+        <span class='blue'>Root&ensp;</span>
+        <span class='red'>Boot&ensp;</span>
+        <span class='green'>Glute&ensp;</span>
+      </h1>
+
+      <div id='button-container'>
+        <button id='rock-button' class='button-action' data-choice='root'>Root</button>
+        <button id='paper-button' class='button-action' data-choice='boot'>Boot</button>
+        <button id='scissors-button' class='button-action' data-choice='glute'>Glute</button>
+      </div>
+
+      <div id='scoreboard'>
+        <div id='user-score'>You:
+          <i class="far fa-circle point point5" id="user-point5"></i>
+          <i class="far fa-circle point point4" id="user-point4"></i>
+          <i class="far fa-circle point point3" id="user-point3"></i>
+          <i class="far fa-circle point point2" id="user-point2"></i>
+          <i class="far fa-circle point point1" id="user-point1"></i>
+        </div>
+        <div id='computer-score'>Wood spirit:
+          <i class="far fa-circle point point5" id="computer-point5"></i>
+          <i class="far fa-circle point point4" id="computer-point4"></i>
+          <i class="far fa-circle point point3" id="computer-point3"></i>
+          <i class="far fa-circle point point2" id="computer-point2"></i>
+          <i class="far fa-circle point point1" id="computer-point1"></i>
+        </div>
+      </div>
+
+      <div id='current-round'>
+        <div id="instructions">Make your choice to begin the match...</div>
+      </div>
+      <div id='round-description'></div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript" src="script-game.js"></script>
+</html>
